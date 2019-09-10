@@ -3,12 +3,12 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Phpml\Classification\KNearestNeighbors;
 
-$samples = [[1, 3], [1, 4], [2, 4], [3, 1], [4, 1], [4, 2]];
-$labels = ['a', 'a', 'a', 'b', 'b', 'b'];
+$samples = [[100, 80, 100], [100, 100, 100], [70, 85, 90], [30, 20, 0], [0, 0, 0], [10, 50, 40]];
+$labels = ['lulus', 'lulus', 'lulus', 'tidak lulus', 'tidak lulus', 'tidak lulus'];
 
 $classifier = new KNearestNeighbors();
 $classifier->train($samples, $labels);
 
-echo $classifier->predict([3, 2]);
+echo $classifier->predict([40, 50, 70]);
 // return 'b'
 ?>

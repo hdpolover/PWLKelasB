@@ -1,5 +1,7 @@
 {
     "require": {
-        "php-ai/php-ml": "^0.8.0"
+        "php-ai/php-ml": "^0.8.0",
+        "sastrawi/sastrawi": "^1.2",
+        "sastrawi/sentence-detector": "^1.1"
     }
 }

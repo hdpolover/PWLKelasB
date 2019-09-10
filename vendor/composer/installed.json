@@ -1,5 +1,38 @@
 [
     {
+        "name": "container-interop/container-interop",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/container-interop/container-interop.git",
+            "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+            "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+            "shasum": ""
+        },
+        "require": {
+            "psr/container": "^1.0"
+        },
+        "time": "2017-02-14T19:40:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Interop\\Container\\": "src/Interop/Container/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+        "homepage": "https://github.com/container-interop/container-interop"
+    },
+    {
         "name": "php-ai/php-ml",
         "version": "0.8.0",
         "version_normalized": "0.8.0.0",
@@ -54,6 +87,515 @@
             "feature extraction",
             "machine learning",
             "pattern recognition"
+        ]
+    },
+    {
+        "name": "psr/container",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/container.git",
+            "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+            "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2017-02-14T16:28:37+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Container\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common Container Interface (PHP FIG PSR-11)",
+        "homepage": "https://github.com/php-fig/container",
+        "keywords": [
+            "PSR-11",
+            "container",
+            "container-interface",
+            "container-interop",
+            "psr"
+        ]
+    },
+    {
+        "name": "sastrawi/sastrawi",
+        "version": "v1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sastrawi/sastrawi.git",
+            "reference": "31fd4261dd4980cc57447f44d1aec4bd69e2abec"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sastrawi/sastrawi/zipball/31fd4261dd4980cc57447f44d1aec4bd69e2abec",
+            "reference": "31fd4261dd4980cc57447f44d1aec4bd69e2abec",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.8.7",
+            "squizlabs/php_codesniffer": "~1.0"
+        },
+        "time": "2016-10-22T03:19:27+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Sastrawi\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andy Librian",
+                "role": "Lead Developer",
+                "email": "andylibrian@gmail.com",
+                "homepage": "http://andylibrian.com"
+            }
+        ],
+        "description": "PHP library for stemming Indonesian language (Bahasa Indonesia)",
+        "homepage": "https://github.com/sastrawi/sastrawi",
+        "keywords": [
+            "bahasa",
+            "indonesia",
+            "indonesian",
+            "kata dasar",
+            "root word",
+            "stem"
+        ]
+    },
+    {
+        "name": "sastrawi/sentence-detector",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sastrawi/sentence-detector.git",
+            "reference": "a7741aea1b78afa0c77e4af1cf36c0eee05dab6f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sastrawi/sentence-detector/zipball/a7741aea1b78afa0c77e4af1cf36c0eee05dab6f",
+            "reference": "a7741aea1b78afa0c77e4af1cf36c0eee05dab6f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3",
+            "sastrawi/string-span": "~1",
+            "sastrawi/trka": "~0.1"
+        },
+        "require-dev": {
+            "behat/behat": "~3",
+            "phpunit/phpunit": "~4",
+            "squizlabs/php_codesniffer": "~1"
+        },
+        "time": "2014-11-30T13:27:19+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Sastrawi\\SentenceDetector": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andy Librian",
+                "email": "andylibrian@gmail.com",
+                "homepage": "http://andylibrian.pro",
+                "role": "Lead Developer"
+            }
+        ],
+        "description": "PHP library that detects sentence in Bahasa Indonesia.",
+        "homepage": "https://github.com/sastrawi/sentence-detector",
+        "keywords": [
+            "bahasa",
+            "indonesia",
+            "indonesian",
+            "natural language processing",
+            "nlp",
+            "sentence detector",
+            "sentence segmentation",
+            "text segmentation"
+        ]
+    },
+    {
+        "name": "sastrawi/string-span",
+        "version": "v1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sastrawi/string-span.git",
+            "reference": "8e927ea4bf94fcc2f678f31aa3d0a62c74b07fbe"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sastrawi/string-span/zipball/8e927ea4bf94fcc2f678f31aa3d0a62c74b07fbe",
+            "reference": "8e927ea4bf94fcc2f678f31aa3d0a62c74b07fbe",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4",
+            "squizlabs/php_codesniffer": "~1"
+        },
+        "time": "2014-12-01T14:01:51+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Sastrawi\\String\\Span": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andy Librian",
+                "email": "andylibrian@gmail.com",
+                "homepage": "http://andylibrian.pro",
+                "role": "Lead Developer"
+            }
+        ],
+        "description": "String span utility.",
+        "homepage": "https://github.com/sastrawi/string-span",
+        "keywords": [
+            "natural language processing",
+            "nlp",
+            "string",
+            "string span"
+        ]
+    },
+    {
+        "name": "sastrawi/trka",
+        "version": "v0.2.0",
+        "version_normalized": "0.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sastrawi/trka.git",
+            "reference": "ff82616135204e2d29aca51c56def3330b994b1c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sastrawi/trka/zipball/ff82616135204e2d29aca51c56def3330b994b1c",
+            "reference": "ff82616135204e2d29aca51c56def3330b994b1c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3",
+            "sastrawi/string-span": "~1",
+            "zendframework/zend-uri": "~2",
+            "zendframework/zend-validator": "~2"
+        },
+        "require-dev": {
+            "behat/behat": "~3",
+            "phpunit/phpunit": "~4",
+            "squizlabs/php_codesniffer": "~1"
+        },
+        "time": "2014-12-04T05:39:36+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Sastrawi\\Trka": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andy Librian",
+                "email": "andylibrian@gmail.com",
+                "homepage": "http://andylibrian.pro",
+                "role": "Lead Developer"
+            }
+        ],
+        "description": "PHP library that guess entity in Bahasa Indonesia.",
+        "homepage": "https://github.com/sastrawi/trka",
+        "keywords": [
+            "bahasa",
+            "indonesia",
+            "indonesian",
+            "named entity detector",
+            "natural language processing",
+            "nlp"
+        ]
+    },
+    {
+        "name": "zendframework/zend-escaper",
+        "version": "2.6.1",
+        "version_normalized": "2.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-escaper.git",
+            "reference": "3801caa21b0ca6aca57fa1c42b08d35c395ebd5f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-escaper/zipball/3801caa21b0ca6aca57fa1c42b08d35c395ebd5f",
+            "reference": "3801caa21b0ca6aca57fa1c42b08d35c395ebd5f",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+            "zendframework/zend-coding-standard": "~1.0.0"
+        },
+        "time": "2019-09-05T20:03:20+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.6.x-dev",
+                "dev-develop": "2.7.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Escaper\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Securely and safely escape HTML, HTML attributes, JavaScript, CSS, and URLs",
+        "keywords": [
+            "ZendFramework",
+            "escaper",
+            "zf"
+        ]
+    },
+    {
+        "name": "zendframework/zend-stdlib",
+        "version": "3.2.1",
+        "version_normalized": "3.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-stdlib.git",
+            "reference": "66536006722aff9e62d1b331025089b7ec71c065"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/66536006722aff9e62d1b331025089b7ec71c065",
+            "reference": "66536006722aff9e62d1b331025089b7ec71c065",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0"
+        },
+        "require-dev": {
+            "phpbench/phpbench": "^0.13",
+            "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+            "zendframework/zend-coding-standard": "~1.0.0"
+        },
+        "time": "2018-08-28T21:34:05+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.2.x-dev",
+                "dev-develop": "3.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Stdlib\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "SPL extensions, array utilities, error handlers, and more",
+        "keywords": [
+            "ZendFramework",
+            "stdlib",
+            "zf"
+        ]
+    },
+    {
+        "name": "zendframework/zend-uri",
+        "version": "2.7.0",
+        "version_normalized": "2.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-uri.git",
+            "reference": "b2785cd38fe379a784645449db86f21b7739b1ee"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-uri/zipball/b2785cd38fe379a784645449db86f21b7739b1ee",
+            "reference": "b2785cd38fe379a784645449db86f21b7739b1ee",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0",
+            "zendframework/zend-escaper": "^2.5",
+            "zendframework/zend-validator": "^2.10"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.4",
+            "zendframework/zend-coding-standard": "~1.0.0"
+        },
+        "time": "2019-02-27T21:39:04+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7.x-dev",
+                "dev-develop": "2.8.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Uri\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "A component that aids in manipulating and validating » Uniform Resource Identifiers (URIs)",
+        "keywords": [
+            "ZendFramework",
+            "uri",
+            "zf"
+        ]
+    },
+    {
+        "name": "zendframework/zend-validator",
+        "version": "2.12.0",
+        "version_normalized": "2.12.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-validator.git",
+            "reference": "64c33668e5fa2d39c6289a878f927ea2b0850c30"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-validator/zipball/64c33668e5fa2d39c6289a878f927ea2b0850c30",
+            "reference": "64c33668e5fa2d39c6289a878f927ea2b0850c30",
+            "shasum": ""
+        },
+        "require": {
+            "container-interop/container-interop": "^1.1",
+            "php": "^5.6 || ^7.0",
+            "zendframework/zend-stdlib": "^3.2.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^6.0.8 || ^5.7.15",
+            "psr/http-message": "^1.0",
+            "zendframework/zend-cache": "^2.6.1",
+            "zendframework/zend-coding-standard": "~1.0.0",
+            "zendframework/zend-config": "^2.6",
+            "zendframework/zend-db": "^2.7",
+            "zendframework/zend-filter": "^2.6",
+            "zendframework/zend-http": "^2.5.4",
+            "zendframework/zend-i18n": "^2.6",
+            "zendframework/zend-math": "^2.6",
+            "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3",
+            "zendframework/zend-session": "^2.8",
+            "zendframework/zend-uri": "^2.5"
+        },
+        "suggest": {
+            "psr/http-message": "psr/http-message, required when validating PSR-7 UploadedFileInterface instances via the Upload and UploadFile validators",
+            "zendframework/zend-db": "Zend\\Db component, required by the (No)RecordExists validator",
+            "zendframework/zend-filter": "Zend\\Filter component, required by the Digits validator",
+            "zendframework/zend-i18n": "Zend\\I18n component to allow translation of validation error messages",
+            "zendframework/zend-i18n-resources": "Translations of validator messages",
+            "zendframework/zend-math": "Zend\\Math component, required by the Csrf validator",
+            "zendframework/zend-servicemanager": "Zend\\ServiceManager component to allow using the ValidatorPluginManager and validator chains",
+            "zendframework/zend-session": "Zend\\Session component, ^2.8; required by the Csrf validator",
+            "zendframework/zend-uri": "Zend\\Uri component, required by the Uri and Sitemap\\Loc validators"
+        },
+        "time": "2019-01-30T14:26:10+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.12.x-dev",
+                "dev-develop": "2.13.x-dev"
+            },
+            "zf": {
+                "component": "Zend\\Validator",
+                "config-provider": "Zend\\Validator\\ConfigProvider"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Validator\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "provides a set of commonly needed validators",
+        "homepage": "https://github.com/zendframework/zend-validator",
+        "keywords": [
+            "validator",
+            "zf2"
         ]
     }
 ]
