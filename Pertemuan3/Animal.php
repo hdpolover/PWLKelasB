@@ -29,5 +29,4 @@ class Animal {
         $this->food = $food;
     }
 }
-
 ?>
