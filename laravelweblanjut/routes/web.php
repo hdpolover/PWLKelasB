@@ -15,4 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/nilaimhs', 'NilaiController@index')->name('nilaimhs');
+Route::get('/nilaimhs', 'NilaiController@search')->name('nilaimhs');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
