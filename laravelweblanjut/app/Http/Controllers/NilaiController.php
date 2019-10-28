@@ -8,6 +8,12 @@ use App\basisdatab;
 
 class NilaiController extends Controller
 {
+        public function __construct()
+        {
+                $this->middleware('auth');
+                $this->middleware('role:admin');
+        }
+
         public function index()
         {
                 $hasil = basisdatab::paginate(5);
