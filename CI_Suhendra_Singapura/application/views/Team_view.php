@@ -11,16 +11,34 @@
 
     <title>UTS PWL</title>
     <style>
-        .td {
+        .container {
+            margin-top: 20px;
+        }
+
+        td {
             vertical-align: middle;
-            ss text-align: center;
+            text-align: center;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        #teamField {
+            text-align: left;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Singapore Premier League</h1>
+        <h1 class="col-md-12 text-center">Singapore Premier League</h1>
+        <br>
         <table class="table table-striped table-bordered" width="100%">
             <tr>
                 <th>#</th>
@@ -33,7 +51,6 @@
                 <th>Goals Against</th>
                 <th>Goal Difference</th>
                 <th>Points</th>
-
             </tr>
             <tr>
                 <?php
@@ -44,7 +61,7 @@
                     $p = floor((($data->menang * 3) + $data->draw));
                     $no++; ?>
                     <td><?php echo $no; ?> </td>
-                    <td><img src="<?php echo base_url('assets/logoimg/') . $data->logo; ?>" class="card-img border"><?php echo $data->nama; ?> </td>
+                    <td id="teamField"><img src="<?php echo base_url('assets/logoimg/') . $data->logo; ?>"> <?php echo $data->nama; ?> </td>
                     <td><?php echo $mp ?> </td>
                     <td><?php echo $data->menang; ?> </td>
                     <td><?php echo $data->draw; ?> </td>
@@ -55,7 +72,6 @@
                     <td><?php echo $p; ?> </td>
             </tr>
         <?php } ?>
-
         </table>
     </div>
 

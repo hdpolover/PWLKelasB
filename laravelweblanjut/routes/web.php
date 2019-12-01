@@ -19,3 +19,5 @@ Route::get('/nilaimhs', 'NilaiController@search')->name('nilaimhs');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('mhs','NilaiController');
