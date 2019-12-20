@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Demo Ajax</title>
+
+    <style>
+        p {
+            padding: 15px;
+            background: #add8e6;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            // Hide displayed paragraphs with different speeds
+            $(".hide-btn").click(function () {
+                $("p.normal").hide();
+                $("p.fast").hide("fast");
+                $("p.slow").hide("slow");
+                $("p.very-fast").hide(50);
+                $("p.very-slow").hide(2000);
+            });
+
+            // Show hidden paragraphs with different speeds
+            $(".show-btn").click(function () {
+                $("p.normal").show();
+                $("p.fast").show("fast");
+                $("p.slow").show("slow");
+                $("p.very-fast").show(50);
+                $("p.very-slow").show(2000);
+            });
+        });
+
+        $(document).ready(function () {
+            $('.show-demo2').hide();
+            $('.show-demo3').hide();
+            $('#demo').hide();
+        });
+
+        $(document).ready(function () {
+            // Hide displayed paragraphs with different speeds
+            $(".hide-btn").click(function () {
+                $("p.normal").hide();
+            });
+
+            // Show hidden paragraphs with different speeds
+            $(".show-btn").click(function () {
+                $("p.normal").show();
+            });
+
+            $(".subm").click(function () {
+                $("#demo").show();
+            });
+
+
+            $(".demo1").click(function () {
+                $(".show-demo1").show();
+                $(".show-demo2").hide();
+                $(".show-demo3").hide();
+            });
+
+            $(".demo2").click(function () {
+                $(".show-demo1").hide();
+                $(".show-demo2").show();
+                $(".show-demo3").hide();
+            });
+
+            $(".demo3").click(function () {
+                $(".show-demo1").hide();
+                $(".show-demo2").hide();
+                $(".show-demo3").show();
+            });
+
+            $(".hide-btn").click(function () {
+                $(".show-btn").show();
+                $(".hide-btn").hide();
+            });
+
+            $(".show-btn").click(function () {
+                $(".hide-btn").show();
+                $(".show-btn").hide();
+            });
+
+        });
+
+        $(document).ready(function () {
+            $('#toggle_div').hide();
+            $('.show-btn').hide();
+        });
+
+        $(document).on('click', '#toggle_button', function () {
+            $('#toggle_button').text('Gambar');
+            $('#toggle_div').toggle();
+        });
+    </script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myText").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-container">
+            <br>
+            <button type="button" class="demo1">Demo Paragraf</button>
+            <button type="button" class="demo2">Demo Gambar</button>
+            <button type="button" class="demo3">Demo Teks</button>
+        </div>
+        <div class="demo-container">
+            <div class="show-demo1">
+                <br>
+                <br>
+                <button type="button" class="hide-btn">Hide Paragraphs</button>
+                <button type="button" class="show-btn">Show Paragraphs</button>
+                <br>
+                <br>
+                <p class="very-fast">This paragraph will show/hide with very fast speed.</p>
+                <p class="normal">This paragraph will show/hide with default speed.</p>
+                <p class="fast">This paragraph will show/hide with fast speed.</p>
+                <p class="slow">This paragraph will show/hide with slow speed.</p>
+                <p class="very-slow">This paragraph will show/hide with very slow speed.</p>
+            </div>
+            <div class="show-demo2">
+                <br />
+                <div>
+                    <button id="toggle_button" class="w3-button w3-black">Gambar</button>
+                </div>
+                <div id="toggle_div">
+                    <img src="stiki-logo.png" style="display: block; margin-left: auto; margin-right: auto;" />
+                </div>
+
+            </div>
+            <div class="show-demo3">
+                <br>
+                <h3>Input Teks</h3>
+
+                <input type="text" id="myText" placeholder="Masukan teks...">
+
+                <button onclick="myFunction()" class="subm">Submit</button>
+
+                <br>
+                <br>
+
+                <p id="demo"></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
